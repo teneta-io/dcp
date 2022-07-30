@@ -1,0 +1,14 @@
+# Server config
+server:
+  host: 127.0.0.1
+  port: 8080
+
+# Rabbitmq config
+rabbitmq:
+  dsn_list: amqp://rabbitmq:rabbitmq@127.0.0.1:5672//
+
+# Redis config
+redis:
+  dsn: 127.0.0.1:6379
+  password: asdasasdas
+

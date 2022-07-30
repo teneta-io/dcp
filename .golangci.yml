@@ -1,0 +1,129 @@
+linters-settings:
+  dogsled:
+    max-blank-identifiers: 2
+  dupl:
+    threshold: 100
+  errcheck:
+    check-type-assertions: true
+    check-blank: true
+  exhaustive:
+    default-signifies-exhaustive: false
+  funlen:
+    lines: 60
+    statements: 40
+  gocognit:
+    min-complexity: 10
+  nestif:
+    min-complexity: 4
+  goconst:
+    min-len: 3
+    min-occurrences: 3
+  gocyclo:
+    min-complexity: 10
+  godot:
+    check-all: false
+  godox:
+    keywords:
+      - FIXME
+      - BUG
+      - TODO
+  gofmt:
+    simplify: true
+  golint:
+    min-confidence: 0.8
+  lll:
+    line-length: 120
+  maligned:
+    suggest-new: true
+  misspell:
+    locale: US
+  nakedret:
+    max-func-lines: 30
+  prealloc:
+    simple: true
+    range-loops: true
+    for-loops: false
+  nolintlint:
+    allow-unused: false
+    allow-leading-space: true
+    allow-no-explanation: []
+    require-explanation: true
+    require-specific: true
+  unparam:
+    check-exported: false
+  unused:
+    check-exported: false
+  whitespace:
+    multi-if: true
+    multi-func: true
+  wsl:
+    strict-append: true
+    allow-assign-and-call: true
+    allow-multiline-assign: true
+    allow-cuddle-declarations: false
+    allow-trailing-comment: false
+    force-case-trailing-whitespace: 0
+    force-err-cuddling: false
+    allow-separated-leading-comment: false
+linters:
+  disable-all: true
+  enable:
+    # default
+    - govet
+    - errcheck
+    - staticcheck
+    - unused
+    - gosimple
+    - structcheck
+    - varcheck
+    - ineffassign
+    - deadcode
+    - typecheck
+    # non-defaults
+    - bodyclose
+    - noctx
+    - golint
+    - stylecheck
+    - rowserrcheck
+    - gosec
+    - interfacer
+    - unconvert
+    - dupl
+    - goconst
+    - gocyclo
+    - gocognit
+    - asciicheck
+    - maligned
+    - misspell
+    - lll
+    - unparam
+    - dogsled
+    - nakedret
+    - prealloc
+    - scopelint
+    - gocritic
+    - godox
+    - funlen
+    - whitespace
+    - wsl
+    - goprintffuncname
+    - gomnd
+    - goerr113
+    - godot
+    - nestif
+    - exportloopref
+    - exhaustive
+    - sqlclosecheck
+    - nlreturn
+    - nolintlint
+    - gofmt
+    - goimports
+    # disabled:
+#    - gofumpt
+#    - gci
+#    - gochecknoglobals
+#    - testpackage
+#    - gochecknoinits
+#    - goheader
+#    - gomodguard
+#    - depguard
